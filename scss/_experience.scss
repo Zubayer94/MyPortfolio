@@ -1,0 +1,13 @@
+.exp-content {
+  text-align: justify;
+  li {
+    color: $highlighter-color;
+    list-style: circle;
+  }
+  span {
+    color: $paragraph-color;
+  }
+  .company-name {
+    color: $highlighter-color;
+  }
+}

@@ -1,0 +1,86 @@
+.social-left {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+  color: $social-color;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+    li {
+      padding: 10px;
+      &:last-of-type {
+        margin-bottom: 15px;
+      }
+    }
+    i {
+      color: $social-color;
+      font-size: 20px;
+      position: relative;
+      top: 0;
+      &:hover {
+        color: $highlighter-color;
+        @include socialEaseOutTrans;
+        top: -5px;
+      }
+    }
+    &::after {
+      @include lineMixin;
+    }
+  }
+}
+
+.social-right {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+  font-family: $menu-font;
+
+  .email-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // position: relative;
+    a {
+      color: $social-color;
+      margin: 20px auto;
+      padding: 10px;
+      font-family: $menu-font;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      writing-mode: vertical-rl;
+      position: relative;
+      top: 0;
+      &:hover {
+        color: $highlighter-color;
+        @include socialEaseOutTrans;
+        top: -5px;
+      }
+    }
+    &::after {
+      @include lineMixin;
+    }
+  }
+}
+
+//tried to practise text as background using after
+// .greeting::after {
+//   content: "Hello";
+//     color: white;
+//     font-size: 34px;
+//     position: absolute;
+//     top: -11px;
+//     left: 14px;
+//     z-index: -1;
+// }

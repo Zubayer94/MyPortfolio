@@ -1,0 +1,89 @@
+.about-content {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 6fr 2fr;
+  gap: 50px;
+  p {
+    text-align: justify;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    position: relative;
+    cursor: pointer;
+    color: $highlighter-color;
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 1.2px;
+      position: relative;
+      background-color: $highlighter-color;
+      @include easeOutTrans2sec;
+      opacity: 0.5;
+    }
+    &:hover:after {
+      width: 100%;
+      @include easeOutTrans2sec;
+    }
+  }
+}
+.about-pic {
+  position: relative;
+  max-width: 230px;
+  max-height: 255px;
+  img {
+    width: 230px;
+    height: 255px;
+  }
+  .layer {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #04034a6b;
+    @include socialEaseOutTrans;
+
+    // background: rgba(lighten($highlighter-color, 2), 0.2);
+    &:hover {
+      @include socialEaseOutTrans;
+      background: none;
+    }
+  }
+  .after-layer {
+    content: "";
+    @include socialEaseOutTrans;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    border: 2px solid $highlighter-color;
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+  }
+  &:hover {
+    .after-layer {
+      @include socialEaseOutTrans;
+      top: 15px;
+      left: 15px;
+    }
+  }
+}
+.skills-list {
+  display: grid;
+  font-size: 14px;
+  grid-template-columns: repeat(2, minmax(140px, 250px));
+  padding: 0px;
+  margin: 20px 18px 0px;
+  li {
+    color: $highlighter-color;
+    list-style: circle;
+  }
+  span {
+    color: $paragraph-color;
+  }
+}
