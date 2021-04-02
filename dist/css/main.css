@@ -393,11 +393,15 @@ header {
     margin: 35px auto 0px;
     width: 70%; }
   footer {
-    top: 175px !important; } }
+    top: 175px !important; }
+  .social-footer {
+    display: unset !important; } }
 
 @media screen and (max-width: 600px) {
   .skills-list li {
-    width: 180px; } }
+    width: 180px; }
+  .social-footer {
+    display: unset !important; } }
 
 @media screen and (max-width: 500px) {
   .section-heading {
@@ -438,7 +442,9 @@ header {
     top: 19vh !important; }
   .to-top {
     right: 15px !important;
-    margin-top: 60vh !important; } }
+    margin-top: 60vh !important; }
+  .social-footer {
+    display: unset !important; } }
 
 * {
   box-sizing: border-box; }

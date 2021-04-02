@@ -12,7 +12,7 @@
 ⚡️ Image optimization\
 ⚡️ Easy site customization\
 
-To view a live example, **[click here](https://github.com/Zubayer94)**
+To view a live example, **[click here](https://zubayer94.github.io/MyPortfolio)**
 
 ---
 

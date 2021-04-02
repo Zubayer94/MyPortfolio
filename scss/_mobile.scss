@@ -113,6 +113,10 @@
   footer {
     top: 175px !important;
   }
+  //show footer social icons
+  .social-footer {
+    display: unset !important;
+  }
 }
 
 // Smartphones
@@ -120,6 +124,10 @@
   //setting skill list width
   .skills-list li {
     width: 180px;
+  }
+  //show footer social icons
+  .social-footer {
+    display: unset !important;
   }
 }
 // Smartphones
@@ -195,5 +203,9 @@
   .to-top {
     right: 15px !important;
     margin-top: 60vh !important;
+  }
+  //show footer social icons
+  .social-footer {
+    display: unset !important;
   }
 }
