@@ -14,7 +14,7 @@ header {
   font-family: $menu-font;
   background: rgba(lighten($primary-color2, 2), 0.5);
 
-  ul {
+  .menu-nav {
     display: flex;
     li {
       list-style: none;
@@ -36,10 +36,10 @@ header {
   padding: 0.75rem 1rem;
   margin-left: 10px;
   margin-top: 4px;
-}
-.resume-link:hover {
-  color: $hover-highlighter-color;
-  background: rgba(lighten($highlighter-color, 2), 0.1);
+  &:hover {
+    color: $hover-highlighter-color;
+    background: rgba(lighten($highlighter-color, 2), 0.1);
+  }
 }
 
 .about-email-link {

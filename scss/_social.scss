@@ -26,6 +26,8 @@
       font-size: 20px;
       position: relative;
       top: 0;
+      @include socialEaseOutTrans;
+
       &:hover {
         color: $highlighter-color;
         @include socialEaseOutTrans;
@@ -62,6 +64,8 @@
       writing-mode: vertical-rl;
       position: relative;
       top: 0;
+      @include socialEaseOutTrans;
+
       &:hover {
         color: $highlighter-color;
         @include socialEaseOutTrans;

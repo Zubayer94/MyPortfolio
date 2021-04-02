@@ -29,3 +29,5 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+
+// const toTop = document.querySelector(".to-top")

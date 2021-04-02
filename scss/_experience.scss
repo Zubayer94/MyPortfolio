@@ -1,3 +1,9 @@
+#experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 .exp-content {
   text-align: justify;
   li {

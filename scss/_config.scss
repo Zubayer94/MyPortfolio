@@ -8,6 +8,7 @@ $hover-highlighter-color: #f0b319;
 $heading-line-color: #ccd6f6;
 $paragraph-color: #c2cae6;
 $social-color: #a8b2d1;
+$light-navy: #172a45;
 $show-home-image: true;
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Fira+Mono:wght@400;500&display=swap");
 $menu-font: "Fira Code", Fira Mono, Roboto Mono;
@@ -75,15 +76,20 @@ $background-opacity: 0.6;
     @content;
   }
 }
+@mixin mediaMSm {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
 
 @mixin mediaMd {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     @content;
   }
 }
 
 @mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1170px) {
+  @media screen and (min-width: 801px) and (max-width: 1170px) {
     @content;
   }
 }
